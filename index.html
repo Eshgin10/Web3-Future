@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Future - Building Tomorrow's Technology</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-opacity-90 backdrop-blur-md"
+        style="background-color: rgba(10, 14, 35, 0.9);">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <img src="https://placehold.co/40x40/00FFD1/FFFFFF?text=W3" alt="Web3 Logo"
+                        class="w-10 h-10 glow-effect">
+                    <span class="text-xl font-bold gradient-text"
+                        style="font-family: var(--font-heading);">Web3Future</span>
+                </div>
+
+                <!-- Navigation Menu -->
+                <div class="hidden md:flex items-center space-x-8 nav-menu">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#news" class="nav-link">News</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#FAQ" class="nav-link">FAQ</a>
+                </div>
+
+                <!-- CTA Button -->
+                <button
+                    class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <!-- Background Animation -->
+        <div class="background-animation" id="backgroundAnimation">
+            <canvas id="nodeCanvas" class="w-full h-full"></canvas>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-4/5 md:w-3/4 lg:w-2/3 max-w-4xl mx-auto text-center z-10">
+            <!-- Web3 Icon -->
+            <img src="https://placehold.co/60x60/00FFD1/FFFFFF?text=⚡" alt="Web3 Icon"
+                class="w-12 h-12 mb-4 mx-auto glow-effect">
+
+            <!-- Main Headline -->
+            <h1 class="hero-title font-extrabold text-5xl md:text-6xl lg:text-7xl mb-4 gradient-text typewriter-text"
+                style="font-family: var(--font-heading);" id="mainHeadline">
+                Building the Future with Web3 Technology
+            </h1>
+
+            <!-- Sub-headline -->
+            <p class="hero-subtitle text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto text-center mb-8">
+                Empowering decentralized solutions for a connected world through innovative blockchain technology and
+                cutting-edge development.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="btn-primary py-3 px-8 rounded-full font-semibold text-lg">
+                    Start A Project
+                </button>
+                <button class="btn-secondary py-3 px-8 rounded-full font-semibold text-lg">
+                    Free Consultation
+                </button>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section py-20 px-8 bg-[#0D1B33]">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-screen-xl mx-auto">
+            <!-- Left Column - Image -->
+            <div class="about-image-container flex justify-center items-center">
+                <img src="https://placehold.co/600x400/00FFD1/FFFFFF?text=Web3+Team" alt="Web3 Team"
+                    class="about-image w-full h-auto rounded-xl shadow-lg border-2 border-transparent hover:border-[#00FFD1] transition-all duration-300 ease-in-out">
+            </div>
+
+            <!-- Right Column - Content -->
+            <div class="about-content">
+                <!-- Headline -->
+                <h2 class="about-headline font-bold text-4xl md:text-5xl mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#00FFD1] to-[#FF00AA]"
+                    style="font-family: var(--font-heading);">
+                    About Us: Pioneers in Web3 Innovation
+                </h2>
+
+                <!-- Description -->
+                <p class="about-description text-lg md:text-xl text-gray-300 mb-6 max-w-xl">
+                    We are a dedicated team of experts passionate about building decentralized solutions. Our mission is
+                    to empower businesses and individuals with cutting-edge Web3 technologies.
+                </p>
+
+                <!-- Key Points List -->
+                <ul class="about-list mb-8">
+                    <li class="about-list-item flex items-center space-x-2 mb-4 text-gray-300">
+                        <img src="https://placehold.co/24x24/00FFD1/FFFFFF?text=✓" alt="Experience Icon"
+                            class="about-icon text-[#00FFD1] w-6 h-6 mr-2">
+                        <span>10+ Years of Experience</span>
+                    </li>
+                    <li class="about-list-item flex items-center space-x-2 mb-4 text-gray-300">
+                        <img src="https://placehold.co/24x24/00FFD1/FFFFFF?text=🚀" alt="Projects Icon"
+                            class="about-icon text-[#00FFD1] w-6 h-6 mr-2">
+                        <span>50+ Successful Web3 Projects</span>
+                    </li>
+                    <li class="about-list-item flex items-center space-x-2 mb-4 text-gray-300">
+                        <img src="https://placehold.co/24x24/00FFD1/FFFFFF?text=🏆" alt="Awards Icon"
+                            class="about-icon text-[#00FFD1] w-6 h-6 mr-2">
+                        <span>Industry Recognition & Awards</span>
+                    </li>
+                    <li class="about-list-item flex items-center space-x-2 mb-4 text-gray-300">
+                        <img src="https://placehold.co/24x24/00FFD1/FFFFFF?text=🌐" alt="Global Icon"
+                            class="about-icon text-[#00FFD1] w-6 h-6 mr-2">
+                        <span>Global Blockchain Community</span>
+                    </li>
+                </ul>
+
+                <!-- Learn More Button -->
+                <button
+                    class="about-learn-more-btn btn-primary py-3 px-8 rounded-full font-semibold transition-all duration-300 ease-in-out">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- News Section -->
+    <section id="news" class="news-section py-20 px-8 bg-[#11182E]">
+        <div class="max-w-screen-xl mx-auto">
+            <!-- Headline -->
+            <h2 class="news-headline font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#00FFD1] to-[#FF00AA] text-center mb-12"
+                style="font-family: var(--font-heading);">
+                Latest News in Web3
+            </h2>
+
+            <!-- Introduction -->
+            <p class="news-introduction text-lg md:text-xl text-gray-300 max-w-2xl mx-auto text-center mb-12">
+                Stay updated with the latest trends and innovations in the world of Web3 technology.
+            </p>
+
+            <!-- News Cards Grid -->
+            <div class="news-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- News Card 1 -->
+                <article
+                    class="news-card bg-[#1A233A] rounded-xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:transform hover:scale-105">
+                    <img src="https://placehold.co/400x200/00FFD1/FFFFFF?text=DeFi+Innovation"
+                        alt="DeFi Innovation News" class="news-card-image w-full h-48 object-cover">
+                    <div class="news-card-content p-6">
+                        <h3 class="news-card-title text-xl font-bold text-white mb-2">
+                            DeFi Revolution: New Protocols Emerge
+                        </h3>
+                        <p class="news-card-description text-gray-300 mb-4">
+                            Discover the latest decentralized finance protocols that are reshaping the financial
+                            landscape with innovative lending and yield farming mechanisms.
+                        </p>
+                        <button
+                            class="news-read-more-btn btn-secondary py-2 px-4 rounded-full font-medium transition-all duration-300 ease-in-out">
+                            Read More
+                        </button>
+                    </div>
+                </article>
+
+                <!-- News Card 2 -->
+                <article
+                    class="news-card bg-[#1A233A] rounded-xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:transform hover:scale-105">
+                    <img src="https://placehold.co/400x200/FF00AA/FFFFFF?text=NFT+Marketplace"
+                        alt="NFT Marketplace News" class="news-card-image w-full h-48 object-cover">
+                    <div class="news-card-content p-6">
+                        <h3 class="news-card-title text-xl font-bold text-white mb-2">
+                            NFT Marketplaces Reach New Heights
+                        </h3>
+                        <p class="news-card-description text-gray-300 mb-4">
+                            Explore how NFT marketplaces are evolving with new features, improved user experiences, and
+                            innovative creator monetization models.
+                        </p>
+                        <button
+                            class="news-read-more-btn btn-secondary py-2 px-4 rounded-full font-medium transition-all duration-300 ease-in-out">
+                            Read More
+                        </button>
+                    </div>
+                </article>
+
+                <!-- News Card 3 -->
+                <article
+                    class="news-card bg-[#1A233A] rounded-xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:transform hover:scale-105">
+                    <img src="https://placehold.co/400x200/00FFD1/FFFFFF?text=Blockchain+Scaling"
+                        alt="Blockchain Scaling News" class="news-card-image w-full h-48 object-cover">
+                    <div class="news-card-content p-6">
+                        <h3 class="news-card-title text-xl font-bold text-white mb-2">
+                            Blockchain Scaling Solutions Advance
+                        </h3>
+                        <p class="news-card-description text-gray-300 mb-4">
+                            Learn about the latest Layer 2 solutions and scaling technologies that are making blockchain
+                            networks faster and more efficient.
+                        </p>
+                        <button
+                            class="news-read-more-btn btn-secondary py-2 px-4 rounded-full font-medium transition-all duration-300 ease-in-out">
+                            Read More
+                        </button>
+                    </div>
+                </article>
+
+                <!-- News Card 4 -->
+                <article
+                    class="news-card bg-[#1A233A] rounded-xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:transform hover:scale-105">
+                    <img src="https://placehold.co/400x200/FF00AA/FFFFFF?text=Web3+Gaming" alt="Web3 Gaming News"
+                        class="news-card-image w-full h-48 object-cover">
+                    <div class="news-card-content p-6">
+                        <h3 class="news-card-title text-xl font-bold text-white mb-2">
+                            Web3 Gaming: Play-to-Earn Evolution
+                        </h3>
+                        <p class="news-card-description text-gray-300 mb-4">
+                            Dive into the world of blockchain gaming where players can truly own their assets and earn
+                            real value through gameplay.
+                        </p>
+                        <button
+                            class="news-read-more-btn btn-secondary py-2 px-4 rounded-full font-medium transition-all duration-300 ease-in-out">
+                            Read More
+                        </button>
+                    </div>
+                </article>
+
+                <!-- News Card 5 -->
+                <article
+                    class="news-card bg-[#1A233A] rounded-xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:transform hover:scale-105">
+                    <img src="https://placehold.co/400x200/00FFD1/FFFFFF?text=Smart+Contracts"
+                        alt="Smart Contracts News" class="news-card-image w-full h-48 object-cover">
+                    <div class="news-card-content p-6">
+                        <h3 class="news-card-title text-xl font-bold text-white mb-2">
+                            Smart Contract Security Enhanced
+                        </h3>
+                        <p class="news-card-description text-gray-300 mb-4">
+                            Discover the latest advancements in smart contract security protocols and audit
+                            methodologies that protect user funds.
+                        </p>
+                        <button
+                            class="news-read-more-btn btn-secondary py-2 px-4 rounded-full font-medium transition-all duration-300 ease-in-out">
+                            Read More
+                        </button>
+                    </div>
+                </article>
+
+                <!-- News Card 6 -->
+                <article
+                    class="news-card bg-[#1A233A] rounded-xl shadow-lg overflow-hidden transition-all duration-300 ease-in-out hover:transform hover:scale-105">
+                    <img src="https://placehold.co/400x200/FF00AA/FFFFFF?text=DAO+Governance" alt="DAO Governance News"
+                        class="news-card-image w-full h-48 object-cover">
+                    <div class="news-card-content p-6">
+                        <h3 class="news-card-title text-xl font-bold text-white mb-2">
+                            DAO Governance Models Evolve
+                        </h3>
+                        <p class="news-card-description text-gray-300 mb-4">
+                            Explore how Decentralized Autonomous Organizations are implementing new governance
+                            mechanisms for better community decision-making.
+                        </p>
+                        <button
+                            class="news-read-more-btn btn-secondary py-2 px-4 rounded-full font-medium transition-all duration-300 ease-in-out">
+                            Read More
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-20 px-8 bg-[#0D1B33]" id="contact">
+        <div class="max-w-screen-xl mx-auto">
+            <!-- Headline -->
+            <h2
+                class="font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#00FFD1] to-[#FF00AA] text-center mb-12">
+                Get In Touch
+            </h2>
+
+            <!-- Introduction -->
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto text-center mb-12">
+                Have questions or want to learn more about our Web3 solutions? Reach out to us!
+            </p>
+
+            <!-- Contact Form -->
+            <form id="contactForm" class="bg-[#1A233A] rounded-xl p-8 shadow-lg max-w-lg mx-auto">
+                <!-- Name Input -->
+                <input type="text" id="name" name="name" placeholder="Your Name"
+                    class="w-full p-4 mb-6 bg-[#0D1B33] border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#00FFD1]"
+                    required>
+
+                <!-- Email Input -->
+                <input type="email" id="email" name="email" placeholder="Your Email"
+                    class="w-full p-4 mb-6 bg-[#0D1B33] border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#00FFD1]"
+                    required>
+
+                <!-- Message Textarea -->
+                <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                    class="w-full p-4 mb-6 bg-[#0D1B33] border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#00FFD1] resize-vertical"
+                    required></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-primary py-3 px-8 rounded-full font-semibold w-full">
+                    Send Message
+                </button>
+
+                <!-- Error Message Display -->
+                <div id="errorMessage" class="error-message mt-4 p-3 rounded-lg hidden"></div>
+
+                <!-- Success Message Display -->
+                <div id="successMessage" class="success-message mt-4 p-3 rounded-lg hidden"></div>
+            </form>
+        </div>
+    </section>
+    <section id="FAQ" class="faq-section py-20 px-8 bg-[#11182E]">
+        <div class="max-w-screen-xl mx-auto">
+            <!-- Headline -->
+            <h2 class="faq-headline font-bold text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#00FFD1] to-[#FF00AA] text-center mb-12"
+                style="font-family: var(--font-heading);">
+                Frequently Asked Questions
+            </h2>
+
+            <!-- FAQ Items -->
+            <div class="faq-container space-y-6 max-w-3xl mx-auto">
+                <!-- FAQ Item -->
+                <div class="faq-item bg-[#1A233A] rounded-xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 text-left flex justify-between items-center">
+                        <span class="text-lg font-semibold text-white">What is Web3 technology?</span>
+                        <svg class="w-6 h-6 text-[#00FFD1] faq-icon transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 py-4 text-gray-300 hidden">
+                        Web3 is the next evolution of the internet, built on decentralized networks using blockchain
+                        technology...
+                    </div>
+                </div>
+
+                <!-- Duplicate other FAQ items in similar format -->
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-[#1A233A] rounded-xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 text-left flex justify-between items-center">
+                        <span class="text-lg font-semibold text-white">How can Web3 benefit my business?</span>
+                        <svg class="w-6 h-6 text-[#00FFD1] faq-icon transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 py-4 text-gray-300 hidden">
+                        Web3 can enhance your business through improved security, reduced intermediary costs...
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-[#1A233A] rounded-xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 text-left flex justify-between items-center">
+                        <span class="text-lg font-semibold text-white">What are smart contracts?</span>
+                        <svg class="w-6 h-6 text-[#00FFD1] faq-icon transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 py-4 text-gray-300 hidden">
+                        Smart contracts are self-executing contracts with the terms directly written into code. They
+                        automatically enforce and execute agreements between parties without intermediaries...
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-[#1A233A] rounded-xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 text-left flex justify-between items-center">
+                        <span class="text-lg font-semibold text-white">How secure is blockchain technology?</span>
+                        <svg class="w-6 h-6 text-[#00FFD1] faq-icon transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 py-4 text-gray-300 hidden">
+                        Blockchain technology is highly secure due to its decentralized nature, cryptographic
+                        principles, and consensus mechanisms. Each transaction is verified and recorded across multiple
+                        nodes...
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-[#1A233A] rounded-xl overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 text-left flex justify-between items-center">
+                        <span class="text-lg font-semibold text-white">What is the cost of implementing Web3
+                            solutions?</span>
+                        <svg class="w-6 h-6 text-[#00FFD1] faq-icon transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 py-4 text-gray-300 hidden">
+                        The cost varies depending on project complexity, scale, and specific requirements. We offer
+                        flexible pricing models and can provide detailed estimates after understanding your needs...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+<footer class="bg-[#0D1B33] text-gray-300 py-12 px-8">
+    <div class="max-w-screen-xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <img src="https://placehold.co/40x40/00FFD1/FFFFFF?text=W3" alt="Web3 Logo" class="w-10 h-10">
+                    <span class="text-xl font-bold gradient-text">Web3Future</span>
+                </div>
+                <p class="text-sm">Building tomorrow's decentralized technology solutions today.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="hover:text-[#00FFD1] transition-colors">About</a></li>
+                    <li><a href="#news" class="hover:text-[#00FFD1] transition-colors">News</a></li>
+                    <li><a href="#contact" class="hover:text-[#00FFD1] transition-colors">Contact</a></li>
+                    <li><a href="#FAQ" class="hover:text-[#00FFD1] transition-colors">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Contact Us</h3>
+                <ul class="space-y-2">
+                    <li>contact@web3future.com</li>
+                    <li>+1 (555) 123-4567</li>
+                    <li>123 Blockchain Street</li>
+                    <li>Web3 City, WB 12345</li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-[#00FFD1] transition-colors">Twitter</a>
+                    <a href="#" class="hover:text-[#00FFD1] transition-colors">LinkedIn</a>
+                    <a href="#" class="hover:text-[#00FFD1] transition-colors">GitHub</a>
+                    <a href="#" class="hover:text-[#00FFD1] transition-colors">Discord</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-sm">&copy; 2024 Web3Future. All rights reserved.</p>
+        </div>
+    </div>
+</footer>        <script src="/script.js"></script>
+</body>
+
+</html>
